@@ -48,10 +48,14 @@ a {
     gap: 30px;
 }
 
+.image1 {
+    display: flex;
+}
+
 .tech-eye {
     max-width: 400px;
-    flex: 1 0 auto;
-    border: 1px ;
+    flex-shrink: 0;
+    border: 1px;
     border-style: dashed;
     border-color: rgb(50, 32, 32);
 }
@@ -80,5 +84,37 @@ a {
 }
 
 /* Information Section */
+.image-subtext img {
+    max-width: 250px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 1px;
+    border-style: dashed;
+    border-color: rgb(50, 32, 32);
+    border-radius: 10px;
+}
+
+.info-sec {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    color:rgb(50, 32, 32);
+    padding-bottom: 30px;
+}
 
 
+.all-image-subtext {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px;
+}
+
+.image-subtext {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 250px;
+    align-items: center;
+}
+
+/* Quote Section */
