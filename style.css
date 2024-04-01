@@ -9,6 +9,8 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Georgia', 'Times New Roman', serif;
+    color:rgb(50, 32, 32);
+    min-height: 100vh;
 } 
 
 ul {
@@ -50,14 +52,21 @@ a {
 
 .image1 {
     display: flex;
+    flex: 1 1 auto;
+    max-width:400px;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-left: 10px;
 }
 
 .tech-eye {
-    max-width: 400px;
-    flex-shrink: 0;
+    display: flex;
+    width: 400px;
+    height: auto;
     border: 1px;
     border-style: dashed;
     border-color: rgb(50, 32, 32);
+    flex-flow: row wrap;
 }
 
 .left2 {
@@ -108,6 +117,8 @@ a {
     display: flex;
     flex-flow: row wrap;
     gap: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .image-subtext {
@@ -117,4 +128,90 @@ a {
     align-items: center;
 }
 
+.info-sec h4 {
+    font-size: 24px;
+}
+
 /* Quote Section */
+.container-quote {
+    background-color:antiquewhite;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.quote-sec {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+    max-width: 1120px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.quote {
+    font-style:italic;
+    font-size: 30px;
+    padding:0;
+    margin:0;
+}
+
+.name {
+    padding:0;
+    margin-top:10px;
+    font-size: 18px;
+    align-self: flex-end;
+}
+
+/* Call To Action Section */
+.container-sign {
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up-sec {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgb(48, 40, 40);
+    color: antiquewhite;
+    max-width: 800px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+.left3 {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.left3 p {
+    padding: 0;
+    margin: 10px;
+}
+
+.btn2 {
+    max-width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    color:rgb(50, 32, 32);
+    background-color: antiquewhite;
+}
+
+
+/* Copyright Section */
+.footer-sec {
+    background-color: rgb(130, 110, 109);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
